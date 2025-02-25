@@ -1,8 +1,16 @@
-FROM openjdk:21-jdk-slim
+FROM openjdk:21-jdk-slim as builder
 
 WORKDIR /usr/src/app
 
-COPY target/msvc-prueba-0.0.1-SNAPSHOT.jar app.jar
+COPY . /usr/src/app/
+RUN chmod +x ./mvnw && ./mvnw clean package -DskipTests
+
+FROM openjdk:21-jdk-slim as runtime
+
+WORKDIR /app
+
+COPY --from=builder /usr/src/app/target/*.jar app.jar
+# COPY target/msvc-prueba-0.0.1-SNAPSHOT.jar app.jar
 
 EXPOSE 8001
 
