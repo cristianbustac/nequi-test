@@ -32,7 +32,16 @@ Es necesario tener Docker instalado en tu sistema. Descárgalo e instálalo desd
 
 para mejorar la experiencia de usuario se instalo la dependencia de **springdoc-openapi** que nos permite visualizar los endpoint desde un swagger para acceder a este la ruta al correr el docker compose es 
 http://localhost:8001/swagger-ui/index.html#/
-  
+
+**NOTA IMPORTANTE**: si se va a correr la aplicacion desde el contenedor de docker compose es necesario no utlizar el archvio de SwaggerConfig.java  basta con comentarlo y tambien comentar las lineas 
+# springdoc.api-docs.path=/v3/api-docs
+# springdoc.swagger-ui.path=/swagger-ui.html
+# server.forward-headers-strategy=native
+# springdoc.swagger-ui.validator-url=
+# springdoc.swagger-ui.oauth2-redirect-url=https://nequi-test-production.up.railway.app/swagger-ui/oauth2-redirect.html
+en el archivo application.properties de la carpeta resource 
+
+
 ### Se desplego a la nube la aplicacion
 se utilizo un servicio gratuito en la nube para desplegar la aplicacion obteniendo la url 
  http://nequi-test-production.up.railway.app
