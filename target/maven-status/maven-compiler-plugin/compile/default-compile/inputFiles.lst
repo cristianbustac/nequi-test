@@ -1,4 +1,5 @@
 /media/galileo/programas/nequi/msvc-prueba/src/main/java/com/cristian/springcloud/msvc/prueba/msvc_prueba/MsvcPruebaApplication.java
+/media/galileo/programas/nequi/msvc-prueba/src/main/java/com/cristian/springcloud/msvc/prueba/msvc_prueba/config/SwaggerConfig.java
 /media/galileo/programas/nequi/msvc-prueba/src/main/java/com/cristian/springcloud/msvc/prueba/msvc_prueba/controllers/FranquiciaController.java
 /media/galileo/programas/nequi/msvc-prueba/src/main/java/com/cristian/springcloud/msvc/prueba/msvc_prueba/controllers/ProductoController.java
 /media/galileo/programas/nequi/msvc-prueba/src/main/java/com/cristian/springcloud/msvc/prueba/msvc_prueba/controllers/SucursalController.java

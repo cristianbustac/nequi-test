@@ -1,6 +1,7 @@
 com/cristian/springcloud/msvc/prueba/msvc_prueba/services/FranquiciaServiceimpl.class
 com/cristian/springcloud/msvc/prueba/msvc_prueba/controllers/FranquiciaController.class
 com/cristian/springcloud/msvc/prueba/msvc_prueba/services/FranquiciaService.class
+com/cristian/springcloud/msvc/prueba/msvc_prueba/config/SwaggerConfig.class
 com/cristian/springcloud/msvc/prueba/msvc_prueba/repositories/ProductoRepository.class
 com/cristian/springcloud/msvc/prueba/msvc_prueba/MsvcPruebaApplication.class
 com/cristian/springcloud/msvc/prueba/msvc_prueba/dto/ProductoDto.class
