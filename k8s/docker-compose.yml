@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: ..
+      dockerfile: k8s/Dockerfile
+    ports:
+      - "8001:8001"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://root:GlYrpgITUWtnPhDuubOOSgUDvLSieubd@yamanote.proxy.rlwy.net:15587/railway
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: GlYrpgITUWtnPhDuubOOSgUDvLSieubd
